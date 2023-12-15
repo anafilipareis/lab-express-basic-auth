@@ -1,0 +1,21 @@
+{{!-- The signup.hbs will contain the form which will be displayed to users when they want to register. --}}
+
+ {{!-- the form needs to ask users to provide all the information we need from them so they can register (create account) in our app. We will have to add input fields for username, email, and password,  --}}
+
+ <div id="form">
+  <h2>Signup</h2>
+  <form action="/signup" method="POST">
+ 
+    <label> Username
+      <input type="text" name="username" placeholder="ironhacker" />
+    </label>
+ 
+    <label> Password
+      <input type="password" name="password" placeholder="********" />
+    </label>
+ 
+    <button type="submit">Create account</button>
+ 
+    {{!-- error message will be added here --}}
+  </form>
+</div>
